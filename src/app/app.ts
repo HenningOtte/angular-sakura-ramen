@@ -1,10 +1,15 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { LandingPage } from './main-content/landing-page/landing-page';
+import { Maincontent } from './main-content/maincontent';
+import { Footer } from './shared/components/footer/footer';
+import { Imprint } from "./imprint/imprint";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, LandingPage],
+  imports: [RouterOutlet,
+    Maincontent,
+    Footer,
+    Imprint],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
