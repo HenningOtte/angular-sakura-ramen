@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../public/fonts/Raleway-VariableFont_wght.ttf);
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.fontFamily {
+    font-family: 'Raleway';
+}
