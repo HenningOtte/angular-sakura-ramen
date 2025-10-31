@@ -6,7 +6,8 @@ import { HowToOrder } from './how-to-order/how-to-order';
 
 @Component({
   selector: 'app-maincontent',
-  imports: [LandingPage,
+  imports: [
+    LandingPage,
     OurMenu,
     HowToOrder
   ],

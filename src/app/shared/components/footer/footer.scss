@@ -1,0 +1,23 @@
+footer {
+    font-family: 'Raleway';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0a141e;
+    padding: 40px 40px;
+
+    >img {
+        height: 40px;
+        width: auto;
+    }
+
+    >a {
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -2,14 +2,14 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Maincontent } from './main-content/maincontent';
 import { Footer } from './shared/components/footer/footer';
-import { Imprint } from "./imprint/imprint";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,
+  imports: [
+    RouterOutlet,
     Maincontent,
-    Footer,
-    Imprint],
+    Footer
+  ],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
