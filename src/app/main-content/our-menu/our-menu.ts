@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { Meal } from './meal/meal';
 
 @Component({
   selector: 'app-our-menu',
-  imports: [],
+  imports: [Meal],
   templateUrl: './our-menu.html',
   styleUrl: './our-menu.scss',
 })
