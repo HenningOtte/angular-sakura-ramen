@@ -1,21 +1,15 @@
-<div>
-    <img src="img/3_section_our_menu/Png/R1.png" alt="">
+<div [ngStyle]="{'flex-direction': isOdd ? rowReverse : row}">
+    <img src="img/3_section_our_menu/Png/R{{imgNumber}}.png" alt="">
     <div>
-        <p>Tonkotsu Ramen</p>
+        <p>{{meal.name}} {{isOdd}}</p>
         <table>
             <tbody>
+                @for (ingredient of meal.ingredients; track $index) {
                 <tr>
-                    <td>chicken</td>
-                    <td>11.95€</td>
+                    <td>{{ingredient.name}}</td>
+                    <td>{{ingredient.price}}€</td>
                 </tr>
-                <tr>
-                    <td>beef</td>
-                    <td>12.95€</td>
-                </tr>
-                <tr>
-                    <td>shrimp</td>
-                    <td>13.95€</td>
-                </tr>
+                }
             </tbody>
         </table>
     </div>

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Meal } from './meal/meal';
+import { Mealsdata } from '../../mealsdata';
 
 @Component({
   selector: 'app-our-menu',
@@ -8,5 +9,5 @@ import { Meal } from './meal/meal';
   styleUrl: './our-menu.scss',
 })
 export class OurMenu {
-
+  mealsData = inject(Mealsdata);
 }

@@ -1,8 +1,8 @@
+@import './../../../../styles.scss';
+
 nav {
     padding: 32px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include dFlex($jc: space-between);
 
     >img {
         width: 64px;
@@ -10,25 +10,21 @@ nav {
     }
 
     >div {
-        display: flex;
-        align-items: center;
-        gap: 40px;
+        @include dFlex($g: 40px);
 
         >a {
             &:hover {
-                color: #9f0908;
+                color: $darkred;
             }
         }
     }
 }
 
 .phone_btn {
-    display: flex;
-    align-items: center;
-    background-color: #9f0908;
+    @include borderStyling(solid);
+    @include dFlex();
+    background-color: $darkred;
     padding: 8px 16px 8px 12px;
-    border: 3px solid white;
-    border-radius: 16px;
     cursor: pointer;
 
     &:hover {
@@ -47,7 +43,7 @@ nav {
 }
 
 a {
+    @include fontColor(white);
     text-decoration: none;
-    color: white;
     font-size: 24px;
 }

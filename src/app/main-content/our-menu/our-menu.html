@@ -1,8 +1,8 @@
 <section class="fontFamily">
     <h1>OUR MENU</h1>
     <div>
-        <app-meal></app-meal>
-        <app-meal></app-meal>
-        <app-meal></app-meal>
+        @for (singleMeal of mealsData.meals; track singleMeal; let odd = $odd; let index = $index) {
+        <app-meal [meal]="singleMeal" [isOdd]="odd" [imgNumber]="index + 1"></app-meal>
+        }
     </div>
 </section>

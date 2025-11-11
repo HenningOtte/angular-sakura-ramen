@@ -1,5 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+$darkred: #9f0908;
+
+.fontFamily {
+    font-family: 'Raleway';
+}
+
 @font-face {
     font-family: 'Raleway';
     src: url('/fonts/Raleway-VariableFont_wght.ttf');
@@ -14,12 +26,18 @@
     font-style: bold;
 }
 
-* {
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+@mixin borderStyling($bStyle) {
+    border-radius: 16px;
+    border: 3px $bStyle white;
 }
 
-.fontFamily {
-    font-family: 'Raleway';
+@mixin fontColor($color) {
+    color: $color;
+}
+
+@mixin dFlex($jc: center, $ai: center, $g: 0px) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $g;
 }

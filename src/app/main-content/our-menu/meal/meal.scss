@@ -1,36 +1,35 @@
 div {
-    width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+
+  > img {
+    width: 250px;
+    height: auto;
+  }
+
+  > div {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 32px;
-
-    >img {
-        width: 250px;
-        height: auto;
+    flex-direction: column;
+    gap: 8px;
+    width: 300px;
+    > p {
+      font-family: 'Economica-Bold';
+      font-size: 40px;
+      font-weight: 800;
+      width: 100%;
     }
-
-    >div {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        width: 300px;
-        >p {
-            font-family: 'Economica-Bold';
-            font-size: 40px;
-            font-weight: 800;
-            width: 100%;
-        }
-    }
+  }
 }
 
 table {
-    font-size: 24px;
-    font-weight: 600;
-    color: #675e54;
-    tr {
-        width: 300px;
-        display: flex;
-        justify-content: space-between;    
-    }
+  font-size: 24px;
+  font-weight: 600;
+  color: #675e54;
+  tr {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
